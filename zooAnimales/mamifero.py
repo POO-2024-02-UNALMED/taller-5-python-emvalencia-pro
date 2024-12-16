@@ -8,7 +8,7 @@ class Mamifero(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
-        Mamifero.listado.append(self)
+        Mamifero._listado.append(self)
 
     @staticmethod
     def getListado():
@@ -32,7 +32,7 @@ class Mamifero(Animal):
 
     @staticmethod
     def cantidadMamiferos():
-        return len(Mamifero.listado)
+        return len(Mamifero._listado)
 
     @staticmethod
     def crearCaballo(nombre, edad, genero):
