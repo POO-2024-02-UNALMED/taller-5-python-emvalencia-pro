@@ -1,8 +1,3 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
 class Animal:
     totalAnimales = 0
 
@@ -54,11 +49,16 @@ class Animal:
 
     @staticmethod
     def totalPorTipo():
-        return (f"Mamiferos: {Mamifero.cantidad_mamiferos()}\n"
-                f"Aves: {Ave.cantidad_aves()}\n"
-                f"Reptiles: {Reptil.cantidad_reptiles()}\n"
-                f"Peces: {Pez.cantidad_peces()}\n"
-                f"Anfibios: {Anfibio.cantidad_anfibios()}")
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.ave import Ave
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
+        return (f"Mamiferos: {Mamifero.cantidadMamiferos()}\n"
+                f"Aves: {Ave.cantidadAves()}\n"
+                f"Reptiles: {Reptil.cantidadReptiles()}\n"
+                f"Peces: {Pez.cantidadPeces()}\n"
+                f"Anfibios: {Anfibio.cantidadAnfibios()}")
 
     def __str__(self):
         if self._zona is None:
