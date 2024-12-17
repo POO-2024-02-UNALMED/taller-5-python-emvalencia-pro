@@ -22,7 +22,7 @@ class Zona:
     def setAnimales(self, animales):
         self._animales = animales
         
-    def agregarAnimal(self, animal):
+    def agregarAnimales(self, animal):
         self._animales.append(animal)
 
     def cantidadAnimales(self):
