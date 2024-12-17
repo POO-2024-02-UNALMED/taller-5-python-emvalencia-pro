@@ -54,13 +54,9 @@ class Animal:
         from zooAnimales.ave import Ave
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
-        return (f"Mamiferos: {Mamifero.cantidadMamiferos()}\n"
-                f"Aves: {Ave.cantidadAves()}\n"
-                f"Reptiles: {Reptil.cantidadReptiles()}\n"
-                f"Peces: {Pez.cantidadPeces()}\n"
-                f"Anfibios: {Anfibio.cantidadAnfibios()}")
+        return (f"Mamiferos: {Mamifero.cantidadMamiferos()}\n",f"Aves: {Ave.cantidadAves()}\n",f"Reptiles: {Reptil.cantidadReptiles()}\n",f"Peces: {Pez.cantidadPeces()}\n",f"Anfibios: {Anfibio.cantidadAnfibios()}")
 
-    def __str__(self):
+    def toString(self):
         if self._zona is None:
             return (f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}")
         else:

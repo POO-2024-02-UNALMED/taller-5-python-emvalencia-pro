@@ -22,7 +22,7 @@ class Zoologico:
     def setZonas(self, zonas):
         self._zonas = zonas
         
-    def agregarZona(self, zona):
+    def agregarZonas(self, zona):
         self._zonas.append(zona)
 
     def cantidadTotalAnimales(self):
