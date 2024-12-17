@@ -47,7 +47,7 @@ class Animal:
     def setTotalAnimales(cls, total):
         cls.totalAnimales = total
 
-    @staticmethod
+    @classmethod
     def totalPorTipo():
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.anfibio import Anfibio
